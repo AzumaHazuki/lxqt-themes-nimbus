@@ -1,0 +1,182 @@
+/* Panel */
+#panel {
+	color:				#000000;
+	background:			#e8e9ed;
+
+	border:				1px solid #a5a5a4;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+#closeButton {
+        color:                          #000000;
+        background:                     transparent;
+
+        border:                         4px solid transparent;
+        border-image:                   none;
+
+	qproperty-icon:			url(assets/icons/close.png);
+	qproperty-iconSize:		16px;
+}
+
+#actionButton {
+        color:                          #000000;
+        background:                     transparent;
+
+        border:                         4px solid transparent;
+        border-image:                   none;
+
+	qproperty-icon:			url(assets/icons/menu.png);
+	qproperty-iconSize:		16px;
+}
+
+#closeButton:hover, #actionButton:hover {
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e6e8e3, stop:1 #cbcfc6);
+	border-image:			url(assets/buttons/hover.png);
+}
+
+#closeButton:pressed, #actionButton:pressed {
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #cbcfc6, stop:1 #e6e8e3);
+	border-image:			url(assets/buttons/active.png);
+}
+
+/* Command Box */
+#commandEd {
+	color:                          #000000;
+	background:                     #ffffff;
+
+	selection-color:                #ffffff;
+	selection-background-color:     #4b6983;
+
+	border-top:                     1px solid #b2b6b2;
+	border-bottom:                  1px solid #bdbfbd;
+	border-left:                    1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #b2b6b2, stop:1 #bdbfbd);
+	border-right:                   1px solid qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #b2b6b2, stop:1 #bdbfbd);
+
+	border-radius:                  2px;
+
+	margin:                         2px;
+	padding:                        2px;
+
+	min-height:                     19px;
+
+	font:				normal;
+}
+
+/* Search results list */
+#commandList {
+	background:			#ffffff;
+	color:				#000000;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#4b6983;
+
+	alternate-background-color:	#ffffff;
+
+	border:				1px solid #a5a5a4;
+}
+
+#commandList::item, 
+#commandList::item:alternate {
+	color:				#000000;
+	background:			#ffffff;
+}
+
+#commandList::item:hover,
+#commandList::item:selected,
+#commandList::item:selected:hover {
+	color:				#ffffff;
+	background:			#4b6983;
+}
+
+/* Menus */
+QMenu {
+	color:				#000000;
+	background:			#fefefe;
+
+	border:				1px solid #a5a5a4;
+
+	min-width:			120px;
+}
+
+QMenu::item {
+	color:				#000000;
+	background:			transparent;
+
+	border:				1px solid transparent;
+
+	min-width:			120px;
+}
+
+QMenu::item:hover,
+QMenu::item:selected {
+        color:                          #ffffff;
+        background:                     #4b6983;
+}
+
+QMenu::icon {
+	margin-left:			3px;
+}
+
+/* Scrollbars and Sliders */
+QScrollBar {
+	color:                          transparent;
+	background:                     transparent;
+
+	background-image:               url(assets/scrollbars/scrollbar-filler.png);
+	background-attachment:          fixed;
+	background-position:            center;
+	background-repeat:              repeat-y;
+
+	border-top:                     30px;
+	border-bottom:                  30px;
+	border-left:                    0px;
+	border-right:                   0px;
+
+	border-image:                   url(assets/scrollbars/scrollbar.png) 30 0 30 0 stretch stretch;
+
+	width:                          16px;
+}
+
+QScrollBar::handle {
+	color:                          transparent;
+	background:                     qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #e3e6e0, stop:1 #ced2c9);
+
+	background-image:               url(assets/scrollbars/handle-filler.png);
+	background-attachment:          fixed;
+	background-position:            center;
+	background-repeat:              repeat-y;
+
+	border-top:                     14px;
+	border-bottom:                  14px;
+	border-left:                    0px;
+	border-right:                   0px;
+
+	border-image:                   url(assets/scrollbars/handle.png) 14 0 14 0 stretch stretch;
+
+	min-height:                     28px;
+
+	margin:                         -16px 1px;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+	color:                          transparent;
+	background:                     transparent;
+
+	width:                          0px;
+	height:                         0px;
+}
+
+QScrollBar::add-line {
+	border:                         2px solid transparent;
+	border-image:                   url(assets/scrollbars/arrow-down.png);
+}
+
+QScrollBar::sub-line {
+	border:                         2px solid transparent;
+	border-image:                   url(assets/scrollbars/arrow-up.png);
+}
