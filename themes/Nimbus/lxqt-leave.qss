@@ -28,7 +28,7 @@ QPushButton {
         color:                          #000000;
 	background:			transparent;
 
-        border:                         4px solid transparent;
+        border:                         2px solid transparent;
         border-image:                   url(assets/buttons/button.png);
 
         padding-left:                   24px;
@@ -44,7 +44,7 @@ QToolButton {
         color:                          #000000;
 	background:			transparent;
 
-        border:                         4px solid transparent;
+        border:                         2px solid transparent;
         border-image:                   url(assets/buttons/button.png);
 
         padding-left:                   6px;
