@@ -421,7 +421,7 @@ VolumePopup > QPushButton:pressed,
 }
 
 /* Sliders and Scrollbars */
-LXQtPanel QSlider {
+#Backlight QSlider, VolumePopup QSlider  {
     color: #000000;
     background: transparent;
     border: none;
@@ -430,7 +430,7 @@ LXQtPanel QSlider {
     margin: 10px 0px;
 }
 
-LXQtPanel QSlider::groove {
+#Backlight QSlider::groove, VolumePopup QSlider::groove {
     color: #000000;
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #65676e, stop:1 #c2c4cc);
     border: 0px solid transparent;
@@ -438,7 +438,7 @@ LXQtPanel QSlider::groove {
     width: 6px;
 }
 
-LXQtPanel QSlider::sub-page {
+#Backlight QSlider::sub-page, VolumePopup QSlider::sub-page {
     color: #000000;
     background: #4b6983;
     border: 0px solid transparent;
@@ -446,7 +446,7 @@ LXQtPanel QSlider::sub-page {
     width: 6px;
 }
 
-LXQtPanel QSlider::handle {
+#Backlight QSlider::handle, VolumePopup QSlider::handle {
     color: #000000;
     background: transparent;
     background-image: url(assets/scrollbars/slider.png);
